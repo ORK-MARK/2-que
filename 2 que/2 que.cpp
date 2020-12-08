@@ -43,16 +43,16 @@ int main()
         
         printf("2) ");
         for (int i = 0; i < n; i++) {
-            if (arr[i] % 2 != 0) printf(" %d,", arr[i]);
+            if (arr[i] % 2 != 0) printf("%d ", arr[i]);
         }
 
         printf("\n3)");
-        for (int i = n - 1; i <= 0; i--) {
+        for (int i = (n - 1); i >= 0; i--) {
             printf(" %d", arr[i]);
         }
 
     }
-    //delete[] arr;
+    delete[] arr;
     //printf("\n%d\n", n);
     /*if (arr != nullptr) {
         for (int i = 0; i != n; i++) {
