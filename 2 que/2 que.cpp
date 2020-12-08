@@ -9,13 +9,9 @@ float ft_average(int* arr, int n) {
     return avr;
 }
 
-void ft_oddint(int* arr) {
-        
-}
-
-void ft_bckint(int* arr) {
-
-}
+//void ft_bckint(int* arr) {
+//
+//}
 int main()
 {
     int* arr;
@@ -44,19 +40,24 @@ int main()
     if (arr != nullptr) {
         float ave = ft_average(arr, n);
         printf("1) Average = %f\n", ave);
+        
         printf("2) ");
-
         for (int i = 0; i < n; i++) {
             if (arr[i] % 2 != 0) printf(" %d,", arr[i]);
         }
 
+        printf("\n3)");
+        for (int i = n - 1; i <= 0; i--) {
+            printf(" %d", arr[i]);
+        }
+
     }
     //delete[] arr;
-    printf("\n%d\n", n);
+    //printf("\n%d\n", n);
     /*if (arr != nullptr) {
         for (int i = 0; i != n; i++) {
             printf("%d\n", arr[i]);
         }
     }*/
-
+    return 1;
 }
